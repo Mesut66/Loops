@@ -13,7 +13,6 @@ namespace ForForeacFaster
         {
             Database.SetInitializer(new DataInitializer());
         }
-
         public DbSet<Orders> orders { get; set; }
     }
 }
