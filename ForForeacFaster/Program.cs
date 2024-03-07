@@ -21,7 +21,7 @@ namespace ForForeacFaster
 
             for (int i = 0; i < orderList.Count; i++)
             {
-                Console.WriteLine("For => Freight: {0}", orderList[i].Freight);
+                Console.WriteLine("For => ShipName : {0} Freight: {1}", orderList[i].ShipName, orderList[i].Freight);
             }
 
             stopwatch1.Stop();
@@ -31,19 +31,19 @@ namespace ForForeacFaster
             Console.WriteLine("For Döngüsü Süresi: {0:00}:{1:00}:{2:00}:{3:00}", ts1.Hours, ts1.Minutes, ts1.Seconds, ts1.Milliseconds / 10);
 
 
-            Stopwatch stopwatch2 = new Stopwatch();
-            stopwatch2.Start();
-            foreach (var item in orderList)
-            {
-                Console.WriteLine("Foreach => Freight: {0}", item.Freight);
-            }
+            //Stopwatch stopwatch2 = new Stopwatch();
+            //stopwatch2.Start();
+            //foreach (var item in orderList)
+            //{
+            //    Console.WriteLine("Foreach => ShipName : {0} Freight: {1}", item.ShipName, item.Freight);
+            //}
 
-            stopwatch2.Stop();
-            TimeSpan ts2 = stopwatch2.Elapsed;
-            Console.WriteLine("---------------------------------");
-            Console.WriteLine("Data Adedi: {0}", orderList.Count);
+            //stopwatch2.Stop();
+            //TimeSpan ts2 = stopwatch2.Elapsed;
+            //Console.WriteLine("---------------------------------");
+            //Console.WriteLine("Data Adedi: {0}", orderList.Count);
 
-            Console.WriteLine("Foreach Döngüsü Süresi: {0:00}:{1:00}:{2:00}:{3:00}", ts2.Hours, ts2.Minutes, ts2.Seconds, ts2.Milliseconds / 10);
+            //Console.WriteLine("Foreach Döngüsü Süresi: {0:00}:{1:00}:{2:00}:{3:00}", ts2.Hours, ts2.Minutes, ts2.Seconds, ts2.Milliseconds / 10);
 
             Console.Read();
         }
